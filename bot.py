@@ -2,7 +2,9 @@ import json
 import requests
 import discord
 from discord.ext import commands
+import os
 
+token = os.environ.get ('BOT_TOKEN')
 bot = commands.Bot(command_prefix='=')
 
 @bot.command()
@@ -60,6 +62,6 @@ async def fox(ctx):
     embed.set_image(url = json_data['link']) 
     await ctx.send(embed = embed)
  
-bot.run(settings['token'])
+bot.run(str(token)))
 
 
