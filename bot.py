@@ -60,6 +60,6 @@ async def fox(ctx):
     embed.set_image(url = json_data['link']) 
     await ctx.send(embed = embed)
  
-bot.run('ODAyNTMxMjA0MTk2MjA0NTQ1.YAwlbQ.fhcd6qs9NjTEDYtg5OPnsoUMfOI')
+bot.run(settings['token'])
 
 
