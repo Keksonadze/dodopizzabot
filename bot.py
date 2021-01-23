@@ -1,7 +1,8 @@
+import json
+import requests
 import discord
 from discord.ext import commands
 
-token = 'ODAyNTMxMjA0MTk2MjA0NTQ1.YAwlbQ.dhmb0t9OVn4S941Z3K5nKzcxyEY'
 bot = commands.Bot(command_prefix='=')
 
 @bot.command()
@@ -50,8 +51,6 @@ async def hello(ctx):
     author = ctx.message.author
     await ctx.send(f'Дарова, {author.mention}!')
     
-import json
-import requests
 @bot.command()
 async def fox(ctx):
     response = requests.get('https://some-random-api.ml/img/fox') 
@@ -60,6 +59,7 @@ async def fox(ctx):
     embed = discord.Embed(color = 0xff9900, title = 'Random Fox') 
     embed.set_image(url = json_data['link']) 
     await ctx.send(embed = embed)
+    
+token = os.environ.get('BOT_TOKEN')
 
 
-bot.run(token)
