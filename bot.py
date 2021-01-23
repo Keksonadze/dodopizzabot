@@ -7,49 +7,49 @@ bot = commands.Bot(command_prefix='=')
 
 @bot.command()
 async def want(ctx):
-    await ctx.send("Хочешь пиццу?")
+    await ctx.send("Г•Г®Г·ГҐГёГј ГЇГЁГ¶Г¶Гі?")
 
 @bot.command()
 async def pizza(ctx):
-    await ctx.send("Пепперони?")
+    await ctx.send("ГЏГҐГЇГЇГҐГ°Г®Г­ГЁ?")
     
 @bot.command()
 async def niko(ctx):
-    await ctx.send("Слишком красаучег")
+    await ctx.send("Г‘Г«ГЁГёГЄГ®Г¬ ГЄГ°Г Г±Г ГіГ·ГҐГЈ")
     
 @bot.command()
 async def dodo(ctx):
-    await ctx.send("Пицца")
+    await ctx.send("ГЏГЁГ¶Г¶Г ")
  
  
 @bot.command()
 async def battle1(ctx):
-    await ctx.send("Хочешь подраться? Ну давай...")
+    await ctx.send("Г•Г®Г·ГҐГёГј ГЇГ®Г¤Г°Г ГІГјГ±Гї? ГЌГі Г¤Г ГўГ Г©...")
     
 @bot.command()
 async def jenny(ctx):
-    await ctx.send("Эй! Я лучше её...")
+    await ctx.send("ГќГ©! Гџ Г«ГіГ·ГёГҐ ГҐВё...")
     
 @bot.command()
 async def python(ctx):
-    await ctx.send("Питон сила(хочу питсу)")
+    await ctx.send("ГЏГЁГІГ®Г­ Г±ГЁГ«Г (ГµГ®Г·Гі ГЇГЁГІГ±Гі)")
     
 @bot.command()
 async def gay(ctx):
-    await ctx.send("Малыш")
+    await ctx.send("ГЊГ Г«Г»Гё")
     
 @bot.command()
 async def wakeman(ctx):
-    await ctx.send("Вставай, ты обосрался")
+    await ctx.send("Г‚Г±ГІГ ГўГ Г©, ГІГ» Г®ГЎГ®Г±Г°Г Г«Г±Гї")
     
 @bot.command()
 async def intelligence(ctx):
-    await ctx.send("Искуственный интеллект 1 Дженни 0")
+    await ctx.send("Г€Г±ГЄГіГ±ГІГўГҐГ­Г­Г»Г© ГЁГ­ГІГҐГ«Г«ГҐГЄГІ 1 Г„Г¦ГҐГ­Г­ГЁ 0")
     
 @bot.command()
 async def hello(ctx):
     author = ctx.message.author
-    await ctx.send(f'Дарова, {author.mention}!')
+    await ctx.send(f'Г„Г Г°Г®ГўГ , {author.mention}!')
     
 @bot.command()
 async def fox(ctx):
@@ -61,5 +61,7 @@ async def fox(ctx):
     await ctx.send(embed = embed)
     
 token = os.environ.get('BOT_TOKEN')
+
+bot.run(str(token))
 
 
