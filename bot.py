@@ -2,7 +2,6 @@ import json
 import requests
 import discord
 from discord.ext import commands
-import os
 
 bot = commands.Bot(command_prefix='=')
 
@@ -60,9 +59,7 @@ async def fox(ctx):
     embed = discord.Embed(color = 0xff9900, title = 'Random Fox') 
     embed.set_image(url = json_data['link']) 
     await ctx.send(embed = embed)
-    
-token = os.environ.get('BOT_TOKEN')
-
-bot.run(str(token))
+ 
+bot.run('ODAyNTMxMjA0MTk2MjA0NTQ1.YAwlbQ.fhcd6qs9NjTEDYtg5OPnsoUMfOI')
 
 
