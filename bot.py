@@ -41,15 +41,7 @@ async def fox(ctx):
     embed = discord.Embed(color = 0xff9900, title = 'Рандомная Лиса') 
     embed.set_image(url = json_data['link']) 
     await ctx.send(embed = embed) 
-    
-@bot.command()
-async def hug(ctx):
-    response = requests.get('https://some-random-api.ml/animu/hug') 
-    json_data = json.loads(response.text) 
 
-    embed = discord.Embed(color = 0xff9900, title = 'Обнимашки UwU') 
-    embed.set_image(url = json_data['link']) 
-    await ctx.send(embed = embed) 
        
 token = os.environ.get('BOT_TOKEN')
 
