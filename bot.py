@@ -2,14 +2,14 @@ import discord
 from discord.ext import commands
 import os
 
-Bot = commands.Bot(command_prefix= "!")
-Bot.remove_command('help')
+bot = commands.Bot(command_prefix= "!")
+bot.remove_command('help')
 
-@Bot.event
+@bot.event
 async def on_ready():
     print("Bot is online")
  
-@Bot.command(pass_content = True)
+@bot.command(pass_content = True)
     async def kek():
         await Bot.say("cock")
        
