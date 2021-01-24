@@ -22,6 +22,14 @@ async def hello(ctx): # Создаём функцию и передаём арг
 @bot.command()
 async def niko(ctx):
     await ctx.send("Слишком красаучег")
+    
+@bot.command()
+async def pizza(ctx):
+    await ctx.send("Пепперони?")
+    
+@bot.command()
+async def hotel(ctx):
+    await ctx.send("Триваго")
        
 token = os.environ.get('BOT_TOKEN')
 
