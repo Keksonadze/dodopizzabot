@@ -1,8 +1,8 @@
-import json
-import requests
 import discord
 from discord.ext import commands
 import os
+import json
+import requests
 
 bot = commands.Bot(command_prefix= "!")
 bot.remove_command('help')
@@ -35,10 +35,10 @@ async def hotel(ctx):
 
 @bot.command()
 async def fox(ctx):
-    response = requests.get('https://some-random-api.ml/img/fox') 
+    response = requests.get('https://some-random-api.ml/animu/hug') 
     json_data = json.loads(response.text) 
 
-    embed = discord.Embed(color = 0xff9900, title = 'Random Fox') 
+    embed = discord.Embed(color = 0xff9900, title = 'Random Hug') 
     embed.set_image(url = json_data['link']) 
     await ctx.send(embed = embed)
        
