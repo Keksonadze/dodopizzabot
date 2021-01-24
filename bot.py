@@ -10,8 +10,8 @@ async def on_ready():
     print("Bot is online")
  
 @Bot.command(pass_content = True)
-    async def ping():
-        await Bot.say("Pong")
+    async def kek():
+        await Bot.say("cock")
        
 token = os.environ.get('BOT_TOKEN')
 
