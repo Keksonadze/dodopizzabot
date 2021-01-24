@@ -4,7 +4,7 @@ import os
 import json
 import requests
 
-bot = commands.Bot(command_prefix= "!")
+bot = commands.Bot(command_prefix= "=")
 bot.remove_command('help')
 
 @bot.event
@@ -35,12 +35,12 @@ async def hotel(ctx):
 
 @bot.command()
 async def fox(ctx):
-    response = requests.get('https://some-random-api.ml/img/fox') # Get-запрос
-    json_data = json.loads(response.text) # Извлекаем JSON
+    response = requests.get('https://some-random-api.ml/img/fox') 
+    json_data = json.loads(response.text) 
 
-    embed = discord.Embed(color = 0xff9900, title = 'Random Fox') # Создание Embed'a
-    embed.set_image(url = json_data['link']) # Устанавливаем картинку Embed'a
-    await ctx.send(embed = embed) # Отправляем Embed
+    embed = discord.Embed(color = 0xff9900, title = 'Random Fox') 
+    embed.set_image(url = json_data['link']) 
+    await ctx.send(embed = embed) 
        
 token = os.environ.get('BOT_TOKEN')
 
