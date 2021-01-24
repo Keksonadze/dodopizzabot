@@ -34,7 +34,7 @@ async def hotel(ctx):
     await ctx.send("Триваго")
 
 @bot.command()
-async def fox(ctx):
+async def hug(ctx):
     response = requests.get('https://some-random-api.ml/animu/hug') 
     json_data = json.loads(response.text) 
 
