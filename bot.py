@@ -17,7 +17,11 @@ async def kek(ctx):
 async def hello(ctx): # Создаём функцию и передаём аргумент ctx.
     author = ctx.message.author # Объявляем переменную author и записываем туда информацию об авторе.
 
-    await ctx.send(f'Hello, {author.mention}!')
+    await ctx.send(f'Дарова, {author.mention}!')
+    
+@bot.command()
+async def niko(ctx):
+    await ctx.send("Слишком красаучег")
        
 token = os.environ.get('BOT_TOKEN')
 
