@@ -12,6 +12,12 @@ async def on_ready():
 @bot.command(pass_content = True)
 async def kek(ctx):
     await ctx.send("cock")
+    
+@bot.command()
+async def hello(ctx): # Создаём функцию и передаём аргумент ctx.
+    author = ctx.message.author # Объявляем переменную author и записываем туда информацию об авторе.
+
+    await ctx.send(f'Hello, {author.mention}!')
        
 token = os.environ.get('BOT_TOKEN')
 
