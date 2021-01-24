@@ -11,7 +11,7 @@ async def on_ready():
  
 @bot.command(pass_content = True)
 async def kek(ctx):
-    await bot.say("cock")
+    await ctx.send("cock")
        
 token = os.environ.get('BOT_TOKEN')
 
