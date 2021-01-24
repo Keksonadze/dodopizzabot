@@ -33,15 +33,6 @@ async def pizza(ctx):
 async def hotel(ctx):
     await ctx.send("Триваго")
     
-@bot.command()
-async def fox(ctx):
-    response = requests.get('https://some-random-api.ml/img/fox') 
-    json_data = json.loads(response.text) 
-
-    embed = discord.Embed(color = 0xff9900, title = 'Рандомная Лиса') 
-    embed.set_image(url = json_data['link']) 
-    await ctx.send(embed = embed) 
-
        
 token = os.environ.get('BOT_TOKEN')
 
