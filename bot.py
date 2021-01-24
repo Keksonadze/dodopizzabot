@@ -34,13 +34,13 @@ async def hotel(ctx):
     await ctx.send("Триваго")
 
 @bot.command()
-async def hug(ctx):
-    response = requests.get('https://some-random-api.ml/animu/hug') 
-    json_data = json.loads(response.text) 
+async def fox(ctx):
+    response = requests.get('https://some-random-api.ml/img/fox') # Get-запрос
+    json_data = json.loads(response.text) # Извлекаем JSON
 
-    embed = discord.Embed(color = 0xff9900, title = 'Random Hug') 
-    embed.set_image(url = json_data['link']) 
-    await ctx.send(embed = embed)
+    embed = discord.Embed(color = 0xff9900, title = 'Random Fox') # Создание Embed'a
+    embed.set_image(url = json_data['link']) # Устанавливаем картинку Embed'a
+    await ctx.send(embed = embed) # Отправляем Embed
        
 token = os.environ.get('BOT_TOKEN')
 
