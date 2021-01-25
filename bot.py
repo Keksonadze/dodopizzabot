@@ -38,7 +38,16 @@ async def fox(ctx):
     response = requests.get('https://some-random-api.ml/img/fox') 
     json_data = response.json() 
 
-    embed = discord.Embed(color = 0xff9900, title = 'Random Fox') 
+    embed = discord.Embed(color = 0xff9900, title = 'Рандомная лиса') 
+    embed.set_image(url = json_data['link']) 
+    await ctx.send(embed = embed) 
+    
+@bot.command()
+async def hug(ctx):
+    response = requests.get('https://some-random-api.ml/img/fox') 
+    json_data = response.json() 
+
+    embed = discord.Embed(color = 0xff9900, title = 'Обнимашки UwU') 
     embed.set_image(url = json_data['link']) 
     await ctx.send(embed = embed) 
 
