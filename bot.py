@@ -64,7 +64,7 @@ async def help(ctx):
     
 @bot.command()
 async def dm(ctx):
-    await ctx.send_message("Пообщаться хочешь?", ctx.message.author)
+    await ctx.author.send('Пообщаться хочешь?')
     
 token = os.environ.get('BOT_TOKEN')
 
