@@ -54,6 +54,12 @@ async def hug(ctx):
 @bot.command()
 async def sus(ctx):
     await ctx.send("When impostor is sus أريد جعة😂😂😂😂")
+    
+@bot.command()
+async def help(ctx):
+    emb = discord.Embed(title= "Помощь по командам", colour = 0x39d0d6)
+    emb.add_field(name = "{}Команды".format(prefix), value= "Иди в #команды-бота")
+    await ctx.send(embed = emb)
        
 token = os.environ.get('BOT_TOKEN')
 
