@@ -69,7 +69,7 @@ async def dm(ctx):
 token = os.environ.get('BOT_TOKEN')
 
 @bot.command()
-async def spam(ctx, member: discorm_Member):
+async def spam(ctx, member: discord.Member):
     await member.send(f'ПРИВЕТ ОТ ОТБИВАЛЫ')
 
 bot.run(str(token))
