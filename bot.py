@@ -59,8 +59,13 @@ async def sus(ctx):
 @bot.command()
 async def help(ctx):
     emb = discord.Embed(title= "Помощь по командам", colour = 0x39d0d6)
-    emb.add_field(name = "{}Команды", value= "Иди в #команды-бота")
+    emb.add_field(name = "Команды", value= "Иди в #команды-бота")
     await ctx.send(embed = emb)
+    
+@bot.command()
+async def dm(ctx):
+    await ctx.send("Пообщаться хочешь?")
+    await bot.send_message(ctx.message.author)
        
 token = os.environ.get('BOT_TOKEN')
 
