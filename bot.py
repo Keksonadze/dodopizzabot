@@ -36,7 +36,7 @@ async def hotel(ctx):
 @bot.command()
 async def fox(ctx):
     response = requests.get('https://some-random-api.ml/img/fox') 
-    json_data = json.load() 
+    json_data = response.json() 
 
     embed = discord.Embed(color = 0xff9900, title = 'Random Fox') 
     embed.set_image(url = json_data['link']) 
