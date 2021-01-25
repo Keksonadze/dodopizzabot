@@ -41,6 +41,10 @@ async def fox(ctx):
     embed = discord.Embed(color = 0xff9900, title = 'Random Fox') 
     embed.set_image(url = json_data['link']) 
     await ctx.send(embed = embed) 
+
+@bot.command()
+async def sus(ctx):
+    await ctx.send("When impostor is sus أريد جعة😂😂😂😂")
        
 token = os.environ.get('BOT_TOKEN')
 
