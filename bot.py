@@ -4,7 +4,8 @@ import os
 import json
 import requests
 
-bot = commands.Bot(command_prefix= "=")
+prefix = "="
+bot = commands.Bot(command_prefix= prefix)
 bot.remove_command('help')
 
 @bot.event
