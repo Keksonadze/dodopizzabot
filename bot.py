@@ -74,7 +74,7 @@ async def spam1(ctx, member: discord.Member):
     await member.send(f'https://cdn.discordapp.com/attachments/792836364533628981/803319159424811018/IMG_20210124_141155.png')
     
 @bot.command()
-async def spam1(ctx, member: discord.Member):
+async def spam2(ctx, member: discord.Member):
     await member.send(f'https://cdn.discordapp.com/attachments/792836623368585217/803541830619889714/videoplayback_80.mp4')
     
 
