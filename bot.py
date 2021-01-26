@@ -62,14 +62,17 @@ async def help(ctx):
     emb.add_field(name = "Команды", value= "Иди в #команды-бота")
     await ctx.send(embed = emb)
     
-@bot.command()
-async def dm(ctx):
-    await ctx.author.send('Пообщаться хочешь?')
     
 token = os.environ.get('BOT_TOKEN')
 
 @bot.command()
 async def spam(ctx, member: discord.Member):
     await member.send(f'ПРИВЕТ ОТ ОТБИВАЛЫ')
+    
+@bot.command()
+async def spam1(ctx, member: discord.Member):
+    await member.send(f'https://cdn.discordapp.com/attachments/792836364533628981/803319159424811018/IMG_20210124_141155.png')
+    
+
 
 bot.run(str(token))
