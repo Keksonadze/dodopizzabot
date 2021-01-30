@@ -61,6 +61,15 @@ async def help(ctx):
     emb = discord.Embed(title= "Помощь по командам", colour = 0x39d0d6)
     emb.add_field(name = "Команды", value= "Иди в #команды-бота")
     await ctx.send(embed = emb)
+
+@bot.command()
+async def cat(ctx):
+    response = requests.get('https://some-random-api.ml/img/cat') 
+    json_data = response.json()
+    
+    embed = discord.Embed(color = 0xff9900, title = 'Котики UwU') 
+    embed.set_image(url = json_data['link']) 
+    await ctx.send(embed = embed)
     
     
 token = os.environ.get('BOT_TOKEN')
