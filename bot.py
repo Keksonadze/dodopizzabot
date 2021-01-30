@@ -87,5 +87,13 @@ async def spam2(ctx, member: discord.Member):
     await member.send(f'https://cdn.discordapp.com/attachments/792836623368585217/803541830619889714/videoplayback_80.mp4')
     
 
+@bot.command()
+async def gay(ctx):
+    response = requests.get('https://some-random-api.ml/canvas/gay') 
+    json_data = response.json()
+    
+    embed = discord.Embed(color = 0xff9900, title = 'Гей') 
+    embed.set_image(url = json_data['error']) 
+    await ctx.send(embed = embed)
 
 bot.run(str(token))
