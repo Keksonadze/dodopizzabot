@@ -59,7 +59,19 @@ async def sus(ctx):
 @bot.command()
 async def help(ctx):
     emb = discord.Embed(title= "Помощь по командам", colour = 0x39d0d6)
-    emb.add_field(name = "Команды", value= "Иди в #команды-бота")
+    emb.add_field(name = "=help", value= "Помощь по командам")
+    emb.add_field(name = "=sus", value= "When the impostor is sus")
+    emb.add_field(name = "=cat", value= "Рандомный кот")
+    emb.add_field(name = "=fox", value= "Рандомная лиса")
+    emb.add_field(name = "=hug", value= "Обнимашки UwU")
+    emb.add_field(name = "=kek", value= "Cock")
+    emb.add_field(name = "=niko", value= "Слишком красаучег")
+    emb.add_field(name = "=hello", value= "Привет от бота")
+    emb.add_field(name = "=hotel", value= "Trivago")
+    emb.add_field(name = "=pizza", value= "ПИЦЦА")
+    emb.add_field(name = "=spam [Пользователь]", value= "Спам")
+    emb.add_field(name = "=spam1 [Пользователь]", value= "И это спам")
+    emb.add_field(name = "=spam2 [Пользователь]", value= "Это тоже спам")
     await ctx.send(embed = emb)
 
 @bot.command()
@@ -87,13 +99,6 @@ async def spam2(ctx, member: discord.Member):
     await member.send(f'https://cdn.discordapp.com/attachments/792836623368585217/803541830619889714/videoplayback_80.mp4')
     
 
-@bot.command()
-async def gay(ctx):
-    response = requests.get('https://some-random-api.ml/canvas/gay') 
-    json_data = response.json()
-    
-    embed = discord.Embed(color = 0xff9900, title = 'Гей') 
-    embed.set_image(url = json_data['error']) 
-    await ctx.send(embed = embed)
+
 
 bot.run(str(token))
