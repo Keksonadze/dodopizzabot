@@ -72,6 +72,7 @@ async def help(ctx):
     emb.add_field(name = "=spam [Пользователь]", value= "Спам")
     emb.add_field(name = "=spam1 [Пользователь]", value= "И это спам")
     emb.add_field(name = "=spam2 [Пользователь]", value= "Это тоже спам")
+    emb.add_field(name = "=nword [Пользователь]", value= "Bruh")
     await ctx.send(embed = emb)
 
 @bot.command()
