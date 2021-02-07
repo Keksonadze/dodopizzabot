@@ -98,6 +98,10 @@ async def spam1(ctx, member: discord.Member):
 async def spam2(ctx, member: discord.Member):
     await member.send(f'https://cdn.discordapp.com/attachments/792836623368585217/803541830619889714/videoplayback_80.mp4')
     
+@bot.command()
+async def nword(ctx, member: discord.Member):
+    await member.send(f'https://cdn.discordapp.com/attachments/666658269263167498/807952670077747220/6_2020_.mp4')
+    
 
 
 
