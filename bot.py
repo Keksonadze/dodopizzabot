@@ -104,6 +104,4 @@ async def nword(ctx, member: discord.Member):
     await member.send(f'https://cdn.discordapp.com/attachments/666658269263167498/807952670077747220/6_2020_.mp4')
     
 
-
-
 bot.run(str(token))
